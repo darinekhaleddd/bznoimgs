@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installments | Bikes Zone Scooters – Cairo</title>
+  <meta name="description" content="Own a scooter today with easy installment plans from Bikes Zone Scooters, 5 Hassan Aflaton, Cairo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container">
+    <span>📍 5 Hassan Aflaton, Cairo, Egypt</span>
+    <span>📞 +20 XXX XXX XXXX</span>
+    <span>🕘 Daily: 3:00 PM – 11:00 PM</span>
+  </div>
+</div>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Bikes Zone Scooters logo"></a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="burger" aria-label="Open menu"><span></span></label>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="installments.html" class="active">Installments</a></li>
+        <li><a href="accessories.html">Accessories &amp; Spare Parts</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner bg" style="background-image:url('images/installments-banner.jpg')">
+  <div class="container">
+    <h1>Easy <span>Installments</span></h1>
+    <p>Ride your dream scooter today and pay in comfortable monthly payments.</p>
+    <div class="crumbs"><a href="index.html">Home</a> / Installments</div>
+  </div>
+</section>
+
+<!-- ============ INTRO + REQUIREMENTS ============ -->
+<section class="section">
+  <div class="container split">
+    <div class="split-img">
+      <div class="photo bg" style="background-image:url('images/installments-rider.jpg')"></div>
+      <div class="badge">Ride Today<br>Pay Monthly</div>
+    </div>
+    <div class="split-text">
+      <small>How It Works</small>
+      <h2>Your Scooter, Your Pace</h2>
+      <p>At <strong>Bikes Zone Scooters</strong> we believe everyone should be able to enjoy a new scooter. Choose your model, pay a down payment and spread the rest over the months that suit your budget.</p>
+      <p>Visit us at <strong>5 Hassan Aflaton, Cairo</strong> and our team will prepare your plan in minutes.</p>
+      <!-- TODO: edit the required documents to match your real policy -->
+      <ul class="checks">
+        <li>National ID (original and copy)</li>
+        <li>Proof of income or work</li>
+        <li>Proof of address</li>
+        <li>Down payment on the day of purchase</li>
+      </ul>
+      <a href="contact.html" class="btn">Apply Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANS ============ -->
+<!-- TODO: replace the percentages / amounts with your real conditions -->
+<section class="section grey">
+  <div class="container">
+    <div class="title">
+      <small>Choose a Plan</small>
+      <h2>Installment Plans</h2>
+      <p>Three simple options. Pick the one that fits your monthly budget.</p>
+    </div>
+
+    <div class="plans">
+      <div class="plan">
+        <div class="months">12</div>
+        <div class="months-label">Months</div>
+        <ul>
+          <li>Down payment from 00%</li>
+          <li>Lowest total cost</li>
+          <li>Quick approval</li>
+          <li>Free first service</li>
+        </ul>
+        <a href="contact.html" class="btn small dark">Choose Plan</a>
+      </div>
+
+      <div class="plan popular">
+        <span class="ribbon">Most Popular</span>
+        <div class="months">24</div>
+        <div class="months-label">Months</div>
+        <ul>
+          <li>Down payment from 00%</li>
+          <li>Balanced monthly payment</li>
+          <li>Quick approval</li>
+          <li>Free first service</li>
+        </ul>
+        <a href="contact.html" class="btn small">Choose Plan</a>
+      </div>
+
+      <div class="plan">
+        <div class="months">36</div>
+        <div class="months-label">Months</div>
+        <ul>
+          <li>Down payment from 00%</li>
+          <li>Smallest monthly payment</li>
+          <li>Quick approval</li>
+          <li>Free first service</li>
+        </ul>
+        <a href="contact.html" class="btn small dark">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULATOR ============ -->
+<section class="section">
+  <div class="container">
+    <div class="title">
+      <small>Try It</small>
+      <h2>Installment Calculator</h2>
+      <p>Get a quick estimate of your monthly payment.</p>
+    </div>
+
+    <div class="calc" id="calc">
+      <div>
+        <h3>Estimate Your <span style="color:var(--red)">Payment</span></h3>
+        <p style="color:#bbb">Change the numbers and the monthly amount updates instantly.</p>
+        <div class="fields">
+          <div><label for="c-price">Scooter price (EGP)</label><input type="number" id="c-price" value="60000" min="0" step="500"></div>
+          <div><label for="c-down">Down payment (EGP)</label><input type="number" id="c-down" value="15000" min="0" step="500"></div>
+          <div>
+            <label for="c-months">Months</label>
+            <select id="c-months">
+              <option value="12">12 months</option>
+              <option value="24" selected>24 months</option>
+              <option value="36">36 months</option>
+            </select>
+          </div>
+          <div><label for="c-fee">Admin fee (%)</label><input type="number" id="c-fee" value="10" min="0" max="100" step="1"></div>
+        </div>
+      </div>
+      <div class="result">
+        <small>Estimated monthly payment</small>
+        <div class="big" id="c-out">EGP 0</div>
+        <p>Example only. The final amount is confirmed in the showroom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="section grey">
+  <div class="container">
+    <div class="title">
+      <small>Simple Process</small>
+      <h2>Get Your Scooter in 4 Steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Choose</h3><p>Pick your favourite scooter from our showroom.</p></div>
+      <div class="step"><h3>Apply</h3><p>Bring your documents and fill in a short form.</p></div>
+      <div class="step"><h3>Approve</h3><p>We review your request and confirm your plan.</p></div>
+      <div class="step"><h3>Ride</h3><p>Pay the down payment and ride home the same day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="container">
+    <div class="title">
+      <small>Questions</small>
+      <h2>Frequently Asked</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Who can apply for an installment plan?</summary>
+        <p>Students, employees and business owners who meet our simple requirements. Visit the showroom and we will guide you.</p>
+      </details>
+      <details>
+        <summary>Can I pay the whole amount early?</summary>
+        <p>Yes. Ask our team about early settlement when you sign your plan.</p>
+      </details>
+      <details>
+        <summary>Do I need a guarantor?</summary>
+        <p>It depends on the plan and the scooter model. Our team will confirm this when you apply.</p>
+      </details>
+      <details>
+        <summary>Is maintenance available after I buy?</summary>
+        <p>Of course. Our workshop at 5 Hassan Aflaton, Cairo, is open daily from 3:00 PM to 11:00 PM.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALL TO ACTION ============ -->
+<section class="cta bg" style="background-image:url('images/cta-bg.jpg')">
+  <div class="container">
+    <h2>Start Riding Today</h2>
+    <p>Visit our showroom in Cairo and walk out with a plan that fits your budget.</p>
+    <div class="btns">
+      <a href="contact.html" class="btn outline">Contact Us</a>
+      <a href="shop.html" class="btn dark">Browse Scooters</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <img src="images/logo.png" alt="Bikes Zone Scooters logo">
+      <p>Your one-stop scooter shop in Cairo: scooters, installments, maintenance, accessories and spare parts.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="TikTok">tt</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="installments.html">Installments</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>More</h4>
+      <ul>
+        <li><a href="accessories.html">Accessories &amp; Spare Parts</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>📍 5 Hassan Aflaton, Cairo</li>
+        <li>📞 +20 XXX XXX XXXX</li>
+        <li>🕘 Daily: 3:00 PM – 11:00 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">© 2026 Bikes Zone Scooters. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/20XXXXXXXXXX" class="wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">💬</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
